@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Achtung die Kurve</title>
+
+    <link href='./stylesheets/style.css' rel='stylesheet' type='text/css'>
+    <script type="text/javascript" src="./javascripts/jquery.js"></script>
+
+</head>
+<body>
+
+  <audio autoplay loop>
+    <source src="timetogomono.mp3" type="audio/mpeg">
+  </audio>
+
+      <div id="startcolumn">
+
+        <div>
+        <h1>Ready to make some design?</h1>
+
+        <form onsubmit="return false;">
+            <div id="addPlayerContainer">
+                <h2>Add Player</h2>
+                <fieldset>
+                    <table cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="left">
+                                <input type="text" id="playerNameInput" placeholder="Player Name"/>
+                            </td>
+                            <td class="right">
+                                <select id="playerControlsSelect"></select>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="button" id="addPlayerButton" class="button" value="Add Player"/>
+                </fieldset>
+                <div id="startGameContainer" class="hide">
+                    <fieldset>
+                        <input type="button" id="startGame" class="button" value="Start Game" />
+                    </fieldset>
+                </div>
+            </div>
+        </form>
+
+        </div>
+    </div>
+
+    <div id="leftColumn" class="hide">
+
+        <canvas id="canvas" class="show"></canvas>
+
+        <div id="helpContainer" class="show">
+
+        </div>
+
+        <div id="upgradeContainer" class="hide">
+
+        </div>
+    </div>
+
+    <div id="playerListContainer">
+        <ul id="playerList">
+        </ul>
+    </div>
+
+    <script src="./javascripts/adk.minified.js"></script>
+    <script src="./javascripts/script.js"></script>
+</body>
+</html>
